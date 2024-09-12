@@ -159,8 +159,6 @@ section {
 }
 
 #filters {
-    display: flex;
-    justify-content: end;
     margin-bottom: 20px;
     padding: var(--padding-xs);
 }
@@ -205,7 +203,6 @@ div > img {
         padding: 0px;
         position: absolute;
         right: 5svh;
-        top: 2svh;
     }
     
     header > nav {
@@ -218,5 +215,16 @@ div > img {
         height: 5svh;
     }  
 
+}
+
+@media (max-width:540px){
+    #filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        gap: var(--gap-xs);
+       
+
+    }
 }
 
